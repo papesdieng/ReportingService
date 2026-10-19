@@ -29,7 +29,7 @@ builder.Services.AddCors(options =>
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? "Server=(localdb)\\MSSQLLocalDB;Database=Reporting;Trusted_Connection=True;MultipleActiveResultSets=true";
 builder.Services.AddDbContext<ReportingDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<ITradeRepository, TradeRepository>();
-builder.Services.AddScoped<TradeService>();
+builder.Services.AddScoped<ITradeService, TradeService>();
 
 var app = builder.Build();
 

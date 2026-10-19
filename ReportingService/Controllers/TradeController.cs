@@ -6,19 +6,13 @@ namespace ReportingService.Controllers
 {
     [ApiController]
     [Route("api/trades")]
-    public class TradeController : ControllerBase
+    public class TradeController(ITradeService tradeService) : ControllerBase
     {
-        private readonly TradeService _tradeService;
-
-        public TradeController(TradeService tradeService)
-        {
-            _tradeService = tradeService;
-        }
-
+     
         [HttpGet]
         public async Task<ActionResult<List<Trade>>> GetAll(CancellationToken cancellationToken)
         {
-            var trades = await _tradeService.GetAllTradesAsync(cancellationToken);
+            var trades = await tradeService.GetAllTradesAsync(cancellationToken);
             return Ok(trades);
         }
     }

@@ -3,18 +3,12 @@ using ReportingService.Domain.Ports;
 
 namespace ReportingService.Application.Services
 {
-    public class TradeService
+
+    public class TradeService (ITradeRepository tradeRepository) : ITradeService
     {
-        private readonly ITradeRepository _tradeRepository;
-
-        public TradeService(ITradeRepository tradeRepository)
+        public async Task<List<Trade>> GetAllTradesAsync(CancellationToken cancellationToken)
         {
-            _tradeRepository = tradeRepository;
-        }
-
-        public Task<List<Trade>> GetAllTradesAsync(CancellationToken cancellationToken)
-        {
-            return _tradeRepository.GetAllAsync(cancellationToken);
+            return await tradeRepository.GetAllAsync(cancellationToken);
         }
     }
 }
