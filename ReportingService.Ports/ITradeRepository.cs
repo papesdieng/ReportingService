@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ReportingService.Domain.Entities;
+using ReportingService.Entities;
 
-namespace ReportingService.Domain.Ports
+namespace ReportingService.Ports
 {
     public interface ITradeRepository
     {

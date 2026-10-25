@@ -15,4 +15,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReportingService.Adapters\ReportingService.Adapters.csproj" />
+    <ProjectReference Include="..\ReportingService.Domain\ReportingService.Domain.csproj" />
+    <ProjectReference Include="..\ReportingService.Entities\ReportingService.Entities.csproj" />
+    <ProjectReference Include="..\ReportingService.Ports\ReportingService.Ports.csproj" />
+  </ItemGroup>
+
 </Project>

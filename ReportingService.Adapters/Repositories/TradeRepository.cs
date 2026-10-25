@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using ReportingService.Domain.Entities;
-using ReportingService.Domain.Ports;
-using ReportingService.Infrastructure.Persistence;
+using ReportingService.Entities;
+using ReportingService.Ports;
+using ReportingService.Adapters.Persistence;
 
-namespace ReportingService.Infrastructure.Repositories
+namespace ReportingService.Adapters.Repositories
 {
     public class TradeRepository(ReportingDbContext context) : ITradeRepository
     {

@@ -1,3 +1,20 @@
 <Solution>
-  <Project Path="ReportingService/ReportingService.csproj" />
+  <Folder Name="/Domain/">
+    <Project Path="ReportingService.Domain/ReportingService.Domain.csproj" Id="9c26a82c-846b-4d45-a442-e6f11ca29d33" />
+    <Project Path="ReportingService.Entities/ReportingService.Entities.csproj" Id="8a07ea0c-d1db-45b2-ae6e-8a044247c499" />
+    <Project Path="ReportingService.Ports/ReportingService.Ports.csproj" Id="5c6d537c-3ede-4e11-9f26-7da2d0ba0b95" />
+  </Folder>
+  <Folder Name="/Infra/">
+    <Project Path="ReportingService.Adapters/ReportingService.Adapters.csproj" Id="b0e92d31-d3b8-4ed6-b37a-072116331eee" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="ReportingService.Domain.Unit.Tests/ReportingService.Domain.Unit.Tests.csproj" Id="63b05bbd-18e4-478d-a62d-8a8aadc49b61" />
+  </Folder>
+  <Folder Name="/WebApi/">
+    <Project Path="ReportingService/ReportingService.csproj" />
+  </Folder>
 </Solution>

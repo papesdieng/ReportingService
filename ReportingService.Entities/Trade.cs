@@ -1,6 +1,6 @@
 using System;
 
-namespace ReportingService.Domain.Entities
+namespace ReportingService.Entities
 {
     public class Trade
     {

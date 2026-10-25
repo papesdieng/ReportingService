@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ReportingService.Domain.Entities;
+using ReportingService.Entities;
 
-namespace ReportingService.Infrastructure.Persistence
+namespace ReportingService.Adapters.Persistence
 {
     public class ReportingDbContext : DbContext
     {

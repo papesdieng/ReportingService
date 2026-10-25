@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using ReportingService.Application.Services;
-using ReportingService.Domain.Entities;
+using ReportingService.Domain.Services;
+using ReportingService.Entities;
 
 namespace ReportingService.Controllers
 {

@@ -1,6 +1,6 @@
-using ReportingService.Domain.Entities;
+using ReportingService.Entities;
 
-namespace ReportingService.Application.Services
+namespace ReportingService.Domain.Services
 {
     public interface ITradeService
     {

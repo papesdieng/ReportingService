@@ -1,11 +1,8 @@
-using System;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using ReportingService.Application.Services;
-using ReportingService.Infrastructure.Persistence;
-using ReportingService.Infrastructure.Repositories;
-using ReportingService.Domain.Ports;
-using ReportingService.Domain.Entities;
+using ReportingService.Domain.Services;
+using ReportingService.Adapters.Persistence;
+using ReportingService.Adapters.Repositories;
+using ReportingService.Ports;
 
 var builder = WebApplication.CreateBuilder(args);
 
